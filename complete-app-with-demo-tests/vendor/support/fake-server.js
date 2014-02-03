@@ -82,6 +82,7 @@ Storage.prototype = {
   remove: function(id) {
     if(!this.ls["drawing-" + id]) return false;
     delete this.ls["drawing-" + id];
+    return true;
   }
 }
 
