@@ -13,7 +13,7 @@ app.directive("drawing",function() {
     }
     function draw(commands) {
       if(!commands) return;
-      var box = el[0];
+      var box = el[0].getBoundingClientRect();
       width = box.width;
       height = box.height;
       clear();
